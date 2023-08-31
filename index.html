@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiresideGrub Grill</title>
+    <script src="https://kit.fontawesome.com/f921ec9255.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="javaScript/cart.js"></script>
+    <script defer type="module" src="app.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <p>FiresideGrub Grill</p>
+        </a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search here...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="icons">
+            <li>
+                <button>
+                    <a href="HTML/user.html" style="color: #000; text-decoration: none;">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button id="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </li>
+            <li>
+                <button id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </li>
+        </ul>
+        <ul class="content">
+            <li  id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="HTML/menu.html">menu</a>
+            </li>
+            <li>
+                <a href="HTML/about.html">About</a>
+            </li>
+            <li>
+                <a href="HTML/team.html">Our team</a>
+            </li>
+            <li>
+                <a href="HTML/contact.html" class="btn">Contact</a>
+            </li>
+            <li class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="grid">
+            <div class="text">
+                <h1>Simple & Tasty Recipes</h1>
+                <p>Explore a collection of culinary delights with our 'Simple & Tasty Recipes' – where effortless preparation meets delectable flavors, making every meal a delightful experience.</p>
+                <button onclick="window.location.href='HTML/menu.html'">Explore more</button>
+            </div>
+            <img src="https://www.freepnglogos.com/uploads/burger-png/burger-png-png-images-yellow-images-12.png" alt="burger image">
+        </div>
+    </header>
+
+    <!-- Popular foods -->
+    <section class="popular-foods dish">
+        <h2><span>Popular</span> dishes</h2>
+        <div class="grid">
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us">
+        <h5>Why <span>choose us?</span></h5>
+        <div class="grid">
+            <img src="https://png.pngtree.com/png-clipart/20230504/original/pngtree-3d-food-cola-french-fries-burger-multiple-three-dimensional-effects-png-image_9136661.png" alt="Credits: pngtree.com">
+            <div class="text">
+                <h6>Best food in the country</h6>
+                <p>Savor Perfection: Experience the Finest Cuisine in the Nation. Delight in a culinary adventure that transcends expectations at FiresideGrub Grill.<br><br>Our passion for the finest ingredients and meticulous craftsmanship ensures each dish is a masterpiece. Elevate your dining experience with us and relish the essence of culinary excellence found only in the best food in the country.</p>
+                <div class="buttons">
+                    <button><i class="fa-solid fa-truck"></i> Free Delivery</button>
+                    <button><i class="fa-solid fa-cart-shopping"></i> Easy payment</button>
+                    <button><i class="fa-solid fa-phone"></i> 24/7 service </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's speciality -->
+    <section class="todays-speciality dish">
+        <h1><span>Today's</span> speciality</h1>
+        <div class="grid">
+        </div>
+    </section>
+
+    <!-- Customer review -->
+    <section class="testimonial">
+        <h1><span>Customer</span> Reviews</h1>
+        <div class="grid">
+            <div class="box">
+                <p>"I can't say enough good things about my experience at FiresideGrub Grill. From the moment I walked in, the cozy ambiance set the tone."</p>
+                <div class="flex">
+                    <div class="flex-x">
+                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Credits: unplash">
+                        <div>
+                            <h6>John D</h6>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <p>"If you're a food enthusiast like me, FiresideGrub Grill is an absolute must-visit. The culinary creativity that goes into each dish is truly remarkable."</p>
+                <div class="flex">
+                    <div class="flex-x">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Credits: unplash">
+                        <div>
+                            <h6>Michael R</h6>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <p>"FiresideGrub Grill has become my go-to spot whenever I'm craving a memorable meal. What I love most is the diverse menu that caters to various tastes."</p>
+                <div class="flex">
+                    <div class="flex-x">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Credits: unplash">
+                        <div>
+                            <h6>Sarah M</h6>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h1><span>Frequently</span> Asked Questions</h1>
+        <div class="container">
+            <div class="box active">
+                <h1>1. What is FiresideGrub Grill known for? <i class="fa-solid fa-chevron-down"></i></h1>
+                <p>FiresideGrub Grill is renowned for its cozy ambiance and delectable grilled dishes. Our restaurant offers a diverse menu featuring a wide range of grilled meats, vegetables, and other culinary delights.</p>
+            </div>
+            <div class="box">
+                <h1>2. What type of cuisine does FiresideGrub Grill serve? <i class="fa-solid fa-chevron-down"></i></h1>
+                <p>FiresideGrub Grill specializes in American-style grill cuisine. Our menu includes a variety of grilled meats such as steaks, burgers, ribs, and poultry. We also offer vegetarian and seafood options to cater to different preferences.                </p>
+            </div>
+            <div class="box">
+                <h1>3. What makes the dining experience unique at FiresideGrub Grill? <i class="fa-solid fa-chevron-down"></i></h1>
+                <p>The unique factor at FiresideGrub Grill is our emphasis on creating a warm and inviting atmosphere. With crackling fireplaces and rustic décor, our restaurant provides a cozy setting perfect for enjoying hearty grilled meals, making it an ideal spot for gatherings and intimate dinners.</p>
+            </div>
+            <div class="box">
+                <h1>4. Is FiresideGrub Grill suitable for special occasions and events? <i class="fa-solid fa-chevron-down"></i></h1>
+                <p>Absolutely! FiresideGrub Grill is a popular choice for special occasions. We offer event packages that can accommodate birthdays, anniversaries, corporate dinners, and more. Our staff is dedicated to making your event memorable with exceptional service and delicious food.</p>
+            </div>
+            <div class="box">
+                <h1>5. Are reservations required, and how can they be made? <i class="fa-solid fa-chevron-down"></i></h1>
+                <p>Reservations are recommended, especially during peak dining hours and weekends, to ensure you get a table. Reservations can be made by calling our reservation hotline or through our website's online booking system. Walk-ins are also welcome, but availability cannot be guaranteed during busy times.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="grid">
+            <div>
+                <a href="index.html" class="logo">
+                    FiresideGrub Grill
+                </a>
+                <p>Indulge in a diverse menu crafted to satisfy all your cravings. Discover a delightful dining experience with us.</p>
+                <span>
+                    <i class="fa-solid fa-phone"></i> (555) 123-4567.
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i> firesidegrubgrill@gmail.com
+                </span>
+            </div>
+            <div>
+                <h1>COMPANY</h1>
+                <a>New York</a>
+                <a>Careers</a>
+                <a>Mobile</a>
+                <a>Blog</a>
+                <a>How we work</a>
+            </div>
+            <div>
+                <h1>WORKING HOURS</h1>
+                <p>Mon - Fri: 9:00AM - 9:00PM</p>
+                <p>Sat: 9:00AM - 19:00PM</p>
+                <p>Sun: Closed</p>
+            </div>
+            <div>
+                <h1>SUBSCRIPTION</h1>
+                <p>Subscribe your Email address for latest news & updates.</p>
+                <input type="email" placeholder="Enter Email Address">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <hr>
+        <p>©️ Copyright 2023 - FiresideGrub Grill</p>
+    </footer>
+
+    <!-- User cart -->
+    <div class="user-cart">
+        <div class="flex">
+            <h1>Shopping Cart (<span class="amount-of-items">0</span>)</h1>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+        </div>
+        <div class="container">
+        </div>
+        <hr>
+        <div class="pro-container">
+            <h2>Subtotal</h2>
+            <div class="flex">
+                <p id="price">0.00$</p>
+                <button>Go to checkout</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Toast nofitication -->
+     <div class="toast-notification">
+    </div>
+</body>
+</html>

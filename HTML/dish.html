@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiresideGrub Grill</title>
+    <script src="https://kit.fontawesome.com/f921ec9255.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script defer type="module" src="../javaScript/cart.js"></script>
+    <script defer type="module" src="../javaScript/dish.js"></script>
+    <script defer type="module" src="../app.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            <p>FiresideGrub Grill</p>
+        </a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search here...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="icons">
+            <li>
+                <button>
+                    <a href="user.html" style="color: #000; text-decoration: none;">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button id="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </li>
+            <li>
+                <button id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </li>
+        </ul>
+        <ul class="content">
+            <li  id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </li>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">menu</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="team.html">Our team</a>
+            </li>
+            <li>
+                <a href="contact.html" class="btn">Contact</a>
+            </li>
+            <li class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Dish -->
+    <section class="dish-info">
+        <div class="grid">
+            <img class="dish_image">
+            <div class="text">
+                <h1 class="dish_title"></h1>
+                <p class="dish_description"></p>
+                <div class="flex">
+                    <h2>Quantity</h2>
+                    <div class="quantity">
+                        <button class="subtract">-</button>
+                        <input type="number" id="quantity" disabled value="1">
+                        <button class="add">+</button>
+                    </div>
+                    <h2 class="dish_price"></h2>
+                </div>
+                <button class="add-to-cart" id="addToCart">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <h3>Category:</h3>
+                <p class="dish_type"></p>
+            </div>
+            <div class="box">
+                <h3>Total calories:</h3>
+                <p class="dish_calories"></p>
+            </div>
+            <div class="box">
+                <h3>Grams:</h3>
+                <p class="dish_grams"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending dishes -->
+    <section class="trending dish">
+        <h1><span>Trending</span> dishes</h1>
+        <div class="grid">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0;">
+        <div class="grid">
+            <div>
+                <a href="../index.html" class="logo">
+                    FiresideGrub Grill
+                </a>
+                <p>Indulge in a diverse menu crafted to satisfy all your cravings. Discover a delightful dining experience with us.</p>
+                <span>
+                    <i class="fa-solid fa-phone"></i> (555) 123-4567.
+                </span>
+                <span>
+                    <i class="fa-solid fa-envelope"></i> firesidegrubgrill@gmail.com
+                </span>
+            </div>
+            <div>
+                <h1>COMPANY</h1>
+                <a>New York</a>
+                <a>Careers</a>
+                <a>Mobile</a>
+                <a>Blog</a>
+                <a>How we work</a>
+            </div>
+            <div>
+                <h1>WORKING HOURS</h1>
+                <p>Mon - Fri: 9:00AM - 9:00PM</p>
+                <p>Sat: 9:00AM - 19:00PM</p>
+                <p>Sun: Closed</p>
+            </div>
+            <div>
+                <h1>SUBSCRIPTION</h1>
+                <p>Subscribe your Email address for latest news & updates.</p>
+                <input type="email" placeholder="Enter Email Address">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <hr>
+        <p>©️ Copyright 2023 - FiresideGrub Grill</p>
+    </footer>
+
+    <!-- User cart -->
+    <div class="user-cart">
+        <div class="flex">
+            <h1>Shopping Cart (<span class="amount-of-items">0</span>)</h1>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+        </div>
+        <div class="container">
+        </div>
+        <hr>
+        <div class="pro-container">
+            <h2>Subtotal</h2>
+            <div class="flex">
+                <p id="price">0.00$</p>
+                <button>Go to checkout</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Toast nofitication -->
+     <div class="toast-notification">
+    </div>
+</body>
+</html>
